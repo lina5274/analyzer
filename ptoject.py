@@ -13,6 +13,9 @@ class PriceMachine:
 
     def load_prices(self, file_path=''):
         paths = glob('price*.csv')
+        if not paths:
+            print("файлов для поиска не найдено")
+            exit()
 
         for file in paths:
             with open(os.path.join(file_path, file), encoding='utf-8') as f:
