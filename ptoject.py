@@ -79,7 +79,7 @@ if __name__ == '__main__':
     path = './'
     pm = PriceMachine()
     pm.load_prices(path)
-    print("Для поска товара напишите его название. Если поиск окончен напишите 'exit'.")
+    print("Для поска товара введите его название. Если поиск окончен введите 'exit'.")
     while True:
         input_text = input('Введите текст для поиска: ')
         if input_text != 'exit':
